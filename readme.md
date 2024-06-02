@@ -10,6 +10,7 @@
 
 ## 目录结构
 
+```
 C:.
 ├─.idea
 │  └─inspectionProfiles
@@ -32,6 +33,9 @@ C:.
 │      ├─total_acc_figs
 │      └─total_loss_figs
 └─pytorch模板实例1
+
+
+```
 
 
 
@@ -62,6 +66,7 @@ C:.
 
 ### 目录结构
 
+```
 ├─pytorch模板
 │  │  00data_preprocess_template.py
 │  │  01pytorch_template.py
@@ -85,6 +90,9 @@ C:.
 │      ├─csvs_loss_figs
 │      ├─total_acc_figs
 │      └─total_loss_figs
+```
+
+
 
 > cmd输入 `tree /f` 即可显示树形结构
 
@@ -172,6 +180,3 @@ C:.
 ##### total_loss_figs
 
 该目录下会根据`01preprocessed_data`  里所有文件保存对应的测试集随着`csvs` 增加，即随着被试训练后得到的损失图像
-
-##### 
-# PyTorch_Template
