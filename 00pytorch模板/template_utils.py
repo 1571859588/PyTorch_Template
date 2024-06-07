@@ -41,6 +41,14 @@ class argparse():
         else:
             print("CUDA is not available.")
         # 根据CUDA的可用性选择运行设备的类型
+    def find_cuda_id(self):
+        # 获取可用GPU的数量
+        num_gpus = torch.cuda.device_count()
+        print(f"Number of available GPUs: {num_gpus}")
+
+        # 遍历每个GPU并打印其序号和名称
+        for i in range(num_gpus):
+            print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
 
 
 ''' 定义早停类(此步骤可以省略)'''

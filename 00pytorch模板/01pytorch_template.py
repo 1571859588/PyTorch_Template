@@ -1,19 +1,3 @@
-'''
-只需要更改模型和训练方式即可
-
-以下函数和类已定义好，可以直接调用，以下的'保存'路径均不用考虑是否存在问题
-评估：evaluate(dataloader, model, device, flag, criterion, optimizer=None, epoch=None, epochs=None):
-    返回平均损失，某次batch的平均准确率，测试准确率（数组）,model,optimizer  flag='valid' / 'test' / 'train'
-自定义数据集：Dataset_name(flag='train', csv_paths=None))
-超参数类：argparse(self, csv_paths, hidden_size=None, lr_adjust=None, input_size=30, output_size=12, epochs=30,
-                 original_lr=0.001,
-                 patience=4, cuda_id=0):仅argparse.device="cuda:cuda_id" 其余返回值都跟参数名称一样
-早停类：EarlyStopping(patience=7, verbose=False, delta=0) verbose是否打印信息 其对象属性值early_stop为True时表示早停
-保存模型（保存）：save_checkpoint(model, optimizer, epoch=None, filepath='./best_model/1.pth')
-加载模型：load_checkpoint(filepath, model, optimizer, device):model, optimizer, epoch,hidden_size
-画图（保存）：save_figure(train_loss, train_epochs_loss, valid_epochs_loss,save_path="./total_loss_figs/1.png")
-'''
-
 ''' 导入包'''
 import numpy as np
 import torch
